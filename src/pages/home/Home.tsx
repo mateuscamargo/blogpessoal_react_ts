@@ -1,6 +1,6 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
-import { useContext } from "react";
 
 function Home() {
 
@@ -11,7 +11,7 @@ function Home() {
       <div>
         <h1>Autenticar Usuário</h1>
         <h2>Seja Bem Vinde: <span>{nome}</span></h2>
-        <Link to="/Login" 
+        <Link to="/login" 
             className="botao"
         >
           Voltar
