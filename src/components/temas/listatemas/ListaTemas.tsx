@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 import type Tema from "../../../models/Tema";
 import CardTemas from "../cardtemas/CardTemas";
+import { buscar } from "../../../services/Service";
 
 function ListaTemas() {
 

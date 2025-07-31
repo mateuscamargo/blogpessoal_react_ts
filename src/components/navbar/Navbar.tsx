@@ -1,11 +1,11 @@
-import { useContext, type Context } from "react";
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 
 function Navbar() {
 
     const navigate = useNavigate();
-    
+
     const { handleLogout } = useContext(AuthContext)
 
     function logout() {
@@ -25,7 +25,7 @@ function Navbar() {
 
                     <div className='flex gap-4'>
                         Postagens
-                        Temas
+                        <Link to='/temas' className='hover:underline'>Temas</Link>
                         <Link to='/cadastrartema' className='hover:underline'>Cadastrar tema</Link>
                         Perfil
                         <Link to='' onClick={logout} className='hover:underline'>Sair</Link>
@@ -37,7 +37,3 @@ function Navbar() {
 }
 
 export default Navbar
-
-function userContext(_AuthContext: Context): { handleLogout: any; } {
-    throw new Error("Function not implemented.");
-}

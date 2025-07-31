@@ -1,5 +1,4 @@
-import { type ReactNode, useState } from "react";
-import { createContext } from "vm";
+import { createContext, type ReactNode, useState } from "react";
 
 interface UserContextProps {
     nome: string
